@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A Theramin for the web",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "start": "node server/server.js"
+  },
   "author": "Chris Powers",
   "license": "MIT",
   "dependencies": {
