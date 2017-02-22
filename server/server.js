@@ -10,5 +10,5 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
 let port = 3000;
-app.listen(port);
+app.listen(process.env.PORT || port); //for heroku shenanigans 
 console.log('http://localhost:' + port.toString() + '/');
