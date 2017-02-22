@@ -1,0 +1,31 @@
+{
+  "name": "WebTheramin",
+  "version": "1.0.0",
+  "description": "A Theramin for the web",
+  "main": "",
+  "scripts": {},
+  "author": "Chris Powers",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.13"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-Powers/WebTheramin"
+  },
+  "keywords": [
+    "theramin"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/C-Powers/WebTheramin"
+}

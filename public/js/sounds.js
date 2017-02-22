@@ -16,10 +16,10 @@
     let freqMod = Math.pow(2, numerator/(12*step));
     let gainMod = delta.y/docHeight;
 
-    oscillator.frequency.value = maxLowFreq * freqMod;
-    console.log(freqMod);
-    console.log(oscillator.frequency.value);
-    console.log(delta);
+    oscillator.frequency.value = maxHighFreq * freqMod;
+    // console.log(freqMod);
+    // console.log(oscillator.frequency.value);
+    // console.log(delta);
     gain.gain.value = (1 - gainMod);
     //oscillator.stop();
     // oscillator.start();
