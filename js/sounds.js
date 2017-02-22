@@ -12,11 +12,14 @@
   oscillator.start();
 
   function variableFreq() {
-    let numerator = -delta.x/20
-    let freqMod = Math.pow(2, numerator/12);
+    let numerator = -delta.x
+    let freqMod = Math.pow(2, numerator/(12*step));
     let gainMod = delta.y/docHeight;
 
     oscillator.frequency.value = maxLowFreq * freqMod;
+    console.log(freqMod);
+    console.log(oscillator.frequency.value);
+    console.log(delta);
     gain.gain.value = (1 - gainMod);
     //oscillator.stop();
     // oscillator.start();
