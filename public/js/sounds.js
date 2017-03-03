@@ -14,14 +14,14 @@
   function variableFreq() {
     let numerator = -delta.x
     let freqMod = Math.pow(2, numerator/(12*step));
-    let gainMod = delta.y/docHeight;
+    let gainMod = delta.y > docHeight ? 1 : delta.y/docHeight;
 
     oscillator.frequency.value = maxHighFreq * freqMod;
-    // console.log(freqMod);
-    // console.log(oscillator.frequency.value);
-    // console.log(delta);
-    gain.gain.value = (1 - gainMod);
-    //oscillator.stop();
-    // oscillator.start();
+    if(MAKESOUND) {
+      gain.gain.value = (1 - gainMod);
+    } else {
+      gain.gain.value = 0;
+    }
   }
+
 })()

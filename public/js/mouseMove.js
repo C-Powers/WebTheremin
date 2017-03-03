@@ -17,9 +17,6 @@
   };
 
   function getMouseDiff() {
-    //let theraminPos = document.getElementsByClass('bar')[0]
-    //let node = document.getElementById('bar');
-    //let barX = node.offsetLeft + node.offsetWidth/2;
     let pos = mousePos;
     if (!pos) {
       delta = {
@@ -27,14 +24,12 @@
         y: 0
       };
     } else {
-      //let diffX = Math.abs(barX - pos.x);
       let diffX = pos.x
       let diffY = pos.y;
       delta = {
         x: diffX,
         y: diffY
-      }; //deltaX is a global var
-      // console.log(delta);
+      }; 
     }
   };
 })();
