@@ -1,5 +1,5 @@
 # WebTheramin
-A... uh... web theramin. Increase X axis to increase pitch, increase Y axis to increase gain.
+A... uh... web theramin. Increase X axis to decrease pitch, increase Y axis for gain to approach 1 (loudness to increase).
 
 
 
