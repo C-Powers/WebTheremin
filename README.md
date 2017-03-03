@@ -22,7 +22,7 @@ N_{octave} represents any coefficient that, when it divides into F_{low}, produc
 Essentially, it is the modulous where x = N * 12 * S, where N is any integer............ AKA it is 2,4,8,16....etc.
 
 
-
-
-
 ![Alt Text](https://github.com/C-Powers/WebTheramin/raw/master/images/CodeCogsEqn.gif)
+
+#TODOs
+1  More interesting and/or adjustable wave forms
