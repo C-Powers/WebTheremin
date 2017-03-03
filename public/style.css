@@ -11,6 +11,13 @@ html, body {
   align-items: center;
 }
 
+.flex-text {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*canvas {
   height: 100vh;
   width: 100vh;

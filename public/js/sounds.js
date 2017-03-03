@@ -14,7 +14,11 @@
   function variableFreq() {
     let numerator = -delta.x
     let freqMod = Math.pow(2, numerator/(12*step));
-    let gainMod = delta.y > docHeight ? 1 : delta.y/docHeight;
+    
+    const CONTROLS_BORDER = document.getElementById('controls')
+                                    .getBoundingClientRect()
+                                    .top
+    let gainMod = delta.y > CONTROLS_BORDER ? 1 : delta.y/CONTROLS_BORDER;
 
     oscillator.frequency.value = maxHighFreq * freqMod;
     if(MAKESOUND) {
